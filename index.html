@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    <head>
+     <body>
+        <h1 class='title'>Tic Tac Toe</h1>
+        <div class='animlogodiv'>
+            <img class='x-anim' alt="x image" src='https://www.materialui.co/materialIcons/navigation/close_white_2048x2048.png'
+                width='5%'>
+            <img class='o-anim' alt="o image" src='http://thematicmapping.org/data/kml/icons/circle.png' width='5%' />
+            <img class="x-anim" alt="x image" src='https://www.materialui.co/materialIcons/navigation/close_white_2048x2048.png'
+                width='5%'>
+        </div>
+        <div class='gamestatus'>
+            <h2 class='gamestatustitle'>Score</h2>
+            <div class='scorediv'>
+                <div class='humanscorediv'>
+                    <span class='humanscoretitle'>
+                        you
+                    </span>
+                    <span id='hs' class="humanscorepoints">
+        
+                    </span>
+                </div>
+                <div class='AIscorediv'>
+                    <span class='AIscoretitle'>
+                        AI
+                    </span>
+                    <span id='ais' class="AIscorepoints">
+                        1
+                    </span>
+                </div>
+        
+            </div>
+            <div class="optionsdiv">
+                <button 
+                class="optionsbutton"
+                onclick='resetGame()'
+                >
+                    Reset
+                </button>
+                <button class="optionsbutton">
+                    Pause
+                </button>
+            </div>
+        </div>
+        <div class="board">
+            <table>
+                <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2">x</td>
+                </tr>
+                <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                </tr>
+            </table>
+        </div>
+      
+        <span class="winnertextmodal">
+        you WON
+        </span>    
+        
+     </body>    
+    <script src="script.js"></script>
+</html>   
